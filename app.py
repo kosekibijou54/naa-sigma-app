@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-from periodictable import elements
+from mendeleev import element
 
 # === Load model dan dataset ===
 model = joblib.load("model_sigma.pkl")
@@ -11,8 +11,8 @@ df_model = pd.read_csv("naa_clean.csv")
 # === Fungsi bantu: mapping Z ke simbol dan nama unsur ===
 def get_element_info(z):
     try:
-        elem = elements[int(z)]
-        return elem.symbol, elem.name.capitalize()
+        e = element(z)
+        return e.symbol, e.name
     except:
         return f"Z={int(z)}", "Unknown"
 
