@@ -6,10 +6,10 @@ import joblib
 
 # Load data
 df = pd.read_csv("naa_clean.csv")
-df_model = df.dropna(subset=["K0", "Sigma"])
+df_model = df.dropna(subset=["K0", "Sigma", "Sigma Uncertainty"])
 
 # Training data
-X = df_model[["K0"]]
+X = df_model[["K0", "Sigma Uncertainty"]]
 y = df_model["Sigma"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
