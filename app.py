@@ -13,7 +13,7 @@ MAX_ATOMIC_NUMBER = 96
 
 atomic_numbers = [i for i in range(1, MAX_ATOMIC_NUMBER + 1)]
 
-elements_list = [periodictable.elements[atomic_number] for atomic_number in atomic_numbers]
+element_list = [periodictable.elements[atomic_number] for atomic_number in atomic_numbers]
 element_symbols_and_names = [(element.symbol, element.name) for element in element_list]
 
 Z_TO_ELEMENT = {atomic_number:element_symbol_and_name for (atomic_number, element_symbol_and_name) in zip(atomic_numbers, element_symbols_and_names)}
