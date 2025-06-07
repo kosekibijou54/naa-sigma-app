@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import periodictable
 import altair as alt
 
 # === Load model dan dataset ===
