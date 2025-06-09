@@ -7,7 +7,7 @@ import altair as alt
 
 # === Load model dan dataset ===
 model = joblib.load("model_sigma.pkl")
-df_model = pd.read_csv("naa_clean.csv")
+df_model = pd.read_csv("pgaa_clean.csv")
 
 MAX_ATOMIC_NUMBER = 96
 
