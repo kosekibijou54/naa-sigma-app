@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 
 # Load data
-df = pd.read_csv("naa_clean.csv")
+df = pd.read_csv("pgaa_clean.csv")
 df_model = df.dropna(subset=["K0", "Sigma", "Sigma Uncertainty"])
 
 # Training data
