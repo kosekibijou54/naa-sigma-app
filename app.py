@@ -23,8 +23,8 @@ def get_element_info(z):
     return Z_TO_ELEMENT.get(int(z), (f"Z={int(z)}", "Unknown"))
 
 # === Judul Aplikasi ===
-st.set_page_config(page_title="Prediksi Sigma dari K0", layout="centered")
-st.title("\U0001F52C Prediksi Sigma Berdasarkan K₀")
+st.set_page_config(page_title="Prediksi Sigma dari k₀", layout="centered")
+st.title("\U0001F52C Prediksi Sigma Berdasarkan k₀")
 st.markdown("Masukkan nilai K₀ untuk memprediksi nilai cross-section (\u03c3) dan menemukan isotop paling mendekati.")
 
 # === Input User ===
