@@ -1,8 +1,8 @@
-# naa-sigma-app
-# NAA Sigma Prediction App
+# pgaa-sigma-app
+# PGAA Sigma Prediction App
 
 ## 📌 Deskripsi
-Aplikasi ini memprediksi nilai **Sigma (σ)** dari nilai **K₀** menggunakan model AI berbasis Gradient Boosting. Prediksi ini berguna dalam konteks **Neutron Activation Analysis (NAA)** untuk membantu memperkirakan seberapa reaktif suatu isotop tanpa eksperimen laboratorium langsung.
+Aplikasi ini memprediksi nilai **Sigma (σ)** dari nilai **K₀** menggunakan model AI berbasis Gradient Boosting. Prediksi ini berguna dalam konteks **Prompt Gamma Activation Analysis (PGAA)** untuk membantu memperkirakan seberapa reaktif suatu isotop tanpa eksperimen laboratorium langsung.
 
 ---
 
@@ -11,17 +11,17 @@ Aplikasi ini memprediksi nilai **Sigma (σ)** dari nilai **K₀** menggunakan mo
 - Prediksi nilai cross-section (σ)
 - Menampilkan 3 isotop dengan nilai σ paling mendekati hasil prediksi
 - Menyediakan informasi unsur (nama dan simbol)
-- Kategori Half-life (Sangat Pendek, Pendek, Sedang, Panjang)
+
 
 ---
 
 ## 📁 Struktur Proyek
 ```
-naa-sigma-app/
+pgaa-sigma-app/
 ├── app.py                # Aplikasi utama Streamlit
 ├── train.py              # Skrip training model AI
 ├── model_sigma.pkl       # Model hasil training
-├── naa_clean.csv         # Dataset utama
+├── pgaa_clean.csv         # Dataset utama
 └── requirements.txt      # Daftar dependensi Python
 ```
 
@@ -52,12 +52,6 @@ streamlit run app.py
 
 ---
 
-## 📚 Referensi
-- De Corte, F. (1986). *The k₀-Standardization Method*
-- IAEA TECDOC-1215: *Neutron Activation Analysis using k₀-method*
-- scikit-learn, streamlit, pandas, periodictable
-
----
 
 ## 👨‍🔬 Dikembangkan oleh
-Tim NAA-AI | 2025
+Kelompok 1 Kecerdasan Buatan | 2025
